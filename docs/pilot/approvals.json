@@ -1,0 +1,495 @@
+[
+  {
+    "run": "01-default",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [
+        {
+          "id": "loose",
+          "path": "machine/loose"
+        },
+        {
+          "id": "gc",
+          "path": "machine/gc"
+        },
+        {
+          "id": "mixed",
+          "path": "machine/mixed"
+        },
+        {
+          "id": "index-v4",
+          "path": "machine/index-v4"
+        },
+        {
+          "id": "reflog",
+          "path": "machine/reflog"
+        },
+        {
+          "id": "clone-local",
+          "path": "machine/clone-local"
+        },
+        {
+          "id": "clone-copy",
+          "path": "machine/clone-copy"
+        },
+        {
+          "id": "clone-transport",
+          "path": "machine/clone-transport"
+        },
+        {
+          "id": "noise",
+          "path": "machine/noise"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "sessions",
+          "path": "machine/sessions",
+          "tool": "other"
+        }
+      ],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "19e0b3096a79dc35a1214955ee0ea773889982e5bab46adb0c9a0168b89280ad",
+    "project_ids": [
+      "loose",
+      "gc",
+      "mixed",
+      "index-v4",
+      "reflog",
+      "clone-local",
+      "clone-copy",
+      "clone-transport",
+      "noise"
+    ],
+    "object_reads": false,
+    "selected_file_reads": false
+  },
+  {
+    "run": "02-objects-only",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [
+        {
+          "id": "loose",
+          "path": "machine/loose"
+        },
+        {
+          "id": "gc",
+          "path": "machine/gc"
+        },
+        {
+          "id": "mixed",
+          "path": "machine/mixed"
+        },
+        {
+          "id": "index-v4",
+          "path": "machine/index-v4"
+        },
+        {
+          "id": "reflog",
+          "path": "machine/reflog"
+        },
+        {
+          "id": "clone-local",
+          "path": "machine/clone-local"
+        },
+        {
+          "id": "clone-copy",
+          "path": "machine/clone-copy"
+        },
+        {
+          "id": "clone-transport",
+          "path": "machine/clone-transport"
+        },
+        {
+          "id": "noise",
+          "path": "machine/noise"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "sessions",
+          "path": "machine/sessions",
+          "tool": "other"
+        }
+      ],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "19e0b3096a79dc35a1214955ee0ea773889982e5bab46adb0c9a0168b89280ad",
+    "project_ids": [
+      "loose",
+      "gc",
+      "mixed",
+      "index-v4",
+      "reflog",
+      "clone-local",
+      "clone-copy",
+      "clone-transport",
+      "noise"
+    ],
+    "object_reads": true,
+    "selected_file_reads": false
+  },
+  {
+    "run": "03-content-only",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [
+        {
+          "id": "loose",
+          "path": "machine/loose"
+        },
+        {
+          "id": "gc",
+          "path": "machine/gc"
+        },
+        {
+          "id": "mixed",
+          "path": "machine/mixed"
+        },
+        {
+          "id": "index-v4",
+          "path": "machine/index-v4"
+        },
+        {
+          "id": "reflog",
+          "path": "machine/reflog"
+        },
+        {
+          "id": "clone-local",
+          "path": "machine/clone-local"
+        },
+        {
+          "id": "clone-copy",
+          "path": "machine/clone-copy"
+        },
+        {
+          "id": "clone-transport",
+          "path": "machine/clone-transport"
+        },
+        {
+          "id": "noise",
+          "path": "machine/noise"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "sessions",
+          "path": "machine/sessions",
+          "tool": "other"
+        }
+      ],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "19e0b3096a79dc35a1214955ee0ea773889982e5bab46adb0c9a0168b89280ad",
+    "project_ids": [
+      "loose",
+      "gc",
+      "mixed",
+      "index-v4",
+      "reflog",
+      "clone-local",
+      "clone-copy",
+      "clone-transport",
+      "noise"
+    ],
+    "object_reads": false,
+    "selected_file_reads": true
+  },
+  {
+    "run": "04-both",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [
+        {
+          "id": "loose",
+          "path": "machine/loose"
+        },
+        {
+          "id": "gc",
+          "path": "machine/gc"
+        },
+        {
+          "id": "mixed",
+          "path": "machine/mixed"
+        },
+        {
+          "id": "index-v4",
+          "path": "machine/index-v4"
+        },
+        {
+          "id": "reflog",
+          "path": "machine/reflog"
+        },
+        {
+          "id": "clone-local",
+          "path": "machine/clone-local"
+        },
+        {
+          "id": "clone-copy",
+          "path": "machine/clone-copy"
+        },
+        {
+          "id": "clone-transport",
+          "path": "machine/clone-transport"
+        },
+        {
+          "id": "noise",
+          "path": "machine/noise"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "sessions",
+          "path": "machine/sessions",
+          "tool": "other"
+        }
+      ],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "19e0b3096a79dc35a1214955ee0ea773889982e5bab46adb0c9a0168b89280ad",
+    "project_ids": [
+      "loose",
+      "gc",
+      "mixed",
+      "index-v4",
+      "reflog",
+      "clone-local",
+      "clone-copy",
+      "clone-transport",
+      "noise"
+    ],
+    "object_reads": true,
+    "selected_file_reads": true
+  },
+  {
+    "run": "05-revised-selections",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [
+        {
+          "id": "loose",
+          "path": "machine/loose"
+        },
+        {
+          "id": "gc",
+          "path": "machine/gc"
+        },
+        {
+          "id": "mixed",
+          "path": "machine/mixed"
+        },
+        {
+          "id": "index-v4",
+          "path": "machine/index-v4"
+        },
+        {
+          "id": "reflog",
+          "path": "machine/reflog"
+        },
+        {
+          "id": "clone-local",
+          "path": "machine/clone-local"
+        },
+        {
+          "id": "clone-copy",
+          "path": "machine/clone-copy"
+        },
+        {
+          "id": "clone-transport",
+          "path": "machine/clone-transport"
+        },
+        {
+          "id": "noise",
+          "path": "machine/noise"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "sessions",
+          "path": "machine/sessions",
+          "tool": "other"
+        }
+      ],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py",
+            "notes.md",
+            "idea.md"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "f99ac4fc9d84d5db7e431ff66bdfacb298bc06f7a74fed4cee66d45e0d971bed",
+    "project_ids": [
+      "loose",
+      "gc",
+      "mixed",
+      "index-v4",
+      "reflog",
+      "clone-local",
+      "clone-copy",
+      "clone-transport",
+      "noise"
+    ],
+    "object_reads": false,
+    "selected_file_reads": true
+  },
+  {
+    "run": "06-approved-new-root",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [
+        {
+          "id": "loose",
+          "path": "machine/loose"
+        },
+        {
+          "id": "gc",
+          "path": "machine/gc"
+        },
+        {
+          "id": "mixed",
+          "path": "machine/mixed"
+        },
+        {
+          "id": "index-v4",
+          "path": "machine/index-v4"
+        },
+        {
+          "id": "reflog",
+          "path": "machine/reflog"
+        },
+        {
+          "id": "clone-local",
+          "path": "machine/clone-local"
+        },
+        {
+          "id": "clone-copy",
+          "path": "machine/clone-copy"
+        },
+        {
+          "id": "clone-transport",
+          "path": "machine/clone-transport"
+        },
+        {
+          "id": "noise",
+          "path": "machine/noise"
+        },
+        {
+          "id": "forgotten",
+          "path": "machine/forgotten"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "sessions",
+          "path": "machine/sessions",
+          "tool": "other"
+        }
+      ],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "5ec10bea6146e16289d22111baae808701447784a7c21ac4e1b0017ac1c51e8d",
+    "project_ids": [
+      "loose",
+      "gc",
+      "mixed",
+      "index-v4",
+      "reflog",
+      "clone-local",
+      "clone-copy",
+      "clone-transport",
+      "noise",
+      "forgotten"
+    ],
+    "object_reads": false,
+    "selected_file_reads": false
+  },
+  {
+    "run": "07-recovery-only",
+    "synthetic_only": true,
+    "basis": "authored non-sensitive fixture; simulated approval, not human consent",
+    "reviewed_scope_relative_to_new_tree": {
+      "version": 1,
+      "projects": [],
+      "sessions": [],
+      "recoveries": [
+        {
+          "id": "working-copy",
+          "source": "machine/loose",
+          "restored": "copies/working-only",
+          "files": [
+            "src/app.py"
+          ]
+        }
+      ]
+    },
+    "plan_sha256": "955d55c6fec190d8c46533f2eb13b05a38e0d5e36459dcf35cd55509f2ff7ae6",
+    "project_ids": [],
+    "object_reads": false,
+    "selected_file_reads": true
+  }
+]

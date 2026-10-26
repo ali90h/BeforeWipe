@@ -1,0 +1,24 @@
+name: Volunteer for the first safe trial
+description: Express interest only; no data access is granted by this issue.
+title: '[Pilot] Volunteer interest'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read docs/VOLUNTEER.md first. This is public. A short expression of interest is enough; do not provide contact details, employer/project names, paths, plans, reports, or personal data. Your GitHub account name will be public. Opening this issue does not authorize access, uploads, optional reads, or any destructive action. No session is scheduled until the maintainer replies.
+  - type: dropdown
+    id: system
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: First session
+      options:
+        - label: I am interested in a synthetic-only supervised trial and understand that BeforeWipe cannot approve a wipe.
+          required: true

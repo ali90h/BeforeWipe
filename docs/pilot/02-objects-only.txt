@@ -1,0 +1,233 @@
+BeforeWipe — scoped evidence report
+Machine wipe readiness: NOT DETERMINED
+Checked: 2026-10-26T10:20:33.464345+00:00
+Attention: 8 | Unknown: 3 | Selected content matches verified: 0
+
+[ATTENTION] loose (project)
+  Staging: confirmed_risk | Coverage: complete
+  Staged change counts: {"added": 0, "deleted": 0, "modified": 1}
+  tracked_paths: 3
+  metadata_changed: 2
+  tracked_missing: 0
+  metadata_matches: 1
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 3
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 1
+  Inventory gaps: {"errors": 0, "excluded": 1, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 1}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  OBSERVED: Files exist outside the index. This includes ignored files; importance is unknown.
+  Next: Review untracked and ignored work locally and select important non-sensitive files for recovery checks.
+  OBSERVED: A local stash reference exists; contents were not opened.
+  Next: Review stashes locally and verify they survive your chosen backup and restore process.
+  UNKNOWN: Some entries were excluded, unsupported, inaccessible, or beyond scan limits.
+  Next: Review excluded content, nested repositories, submodules, and sensitive material with appropriate tools.
+  OBSERVED: The index differs from the physical HEAD tree in object IDs, paths, or modes. Staged work is at risk if only working files are preserved. Renames are counted as additions and deletions; blob availability was not checked.
+  Next: Preserve the repository including its index and objects and independently test its restore. A selected working-file match does not preserve staged-only work.
+  UNKNOWN: The supported index was compared with the physical HEAD tree by IDs and modes. This does not establish blob integrity, backup inclusion, other refs, or repository recoverability.
+  Next: Verify a separate repository restore including staging and the work you consider important.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] gc (project)
+  Staging: unknown | Coverage: incomplete
+  Staged change counts (lower bounds): {"added": 0, "deleted": 0, "modified": 0}
+  tracked_paths: 3
+  metadata_changed: 1
+  tracked_missing: 0
+  metadata_matches: 2
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  UNKNOWN: Staging comparison coverage is incomplete: loose_object_missing_packed_or_external_unsupported. Change counts are lower bounds; other staged work remains unknown.
+  Next: Independently review all staging and preserve index and objects; resolve every coverage gap.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] mixed (project)
+  Staging: unknown | Coverage: incomplete
+  Staged change counts (lower bounds): {"added": 0, "deleted": 0, "modified": 0}
+  tracked_paths: 3
+  metadata_changed: 1
+  tracked_missing: 0
+  metadata_matches: 2
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  UNKNOWN: Staging comparison coverage is incomplete: loose_object_missing_packed_or_external_unsupported. Change counts are lower bounds; other staged work remains unknown.
+  Next: Independently review all staging and preserve index and objects; resolve every coverage gap.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[UNKNOWN] index-v4 (project)
+  unsupported_git_index_version
+  Staging: unsupported | Coverage: unsupported
+  Staged change counts (lower bounds): {"added": 0, "deleted": 0, "modified": 0}
+  Check the explicit scope and supported formats; this item was not fully assessed.
+
+[UNKNOWN] reflog (project)
+  Staging: no_difference_observed | Coverage: complete
+  Staged change counts: {"added": 0, "deleted": 0, "modified": 0}
+  tracked_paths: 3
+  metadata_changed: 0
+  tracked_missing: 0
+  metadata_matches: 3
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  UNKNOWN: The supported index was compared with the physical HEAD tree by IDs and modes. This does not establish blob integrity, backup inclusion, other refs, or repository recoverability.
+  Next: Verify a separate repository restore including staging and the work you consider important.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] clone-local (project)
+  Staging: unknown | Coverage: incomplete
+  Staged change counts (lower bounds): {"added": 0, "deleted": 0, "modified": 0}
+  tracked_paths: 10
+  metadata_changed: 1
+  tracked_missing: 0
+  metadata_matches: 9
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  UNKNOWN: Staging comparison coverage is incomplete: hardlinked_metadata_refused. Change counts are lower bounds; other staged work remains unknown.
+  Next: Independently review all staging and preserve index and objects; resolve every coverage gap.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] clone-copy (project)
+  Staging: confirmed_risk | Coverage: complete
+  Staged change counts: {"added": 0, "deleted": 0, "modified": 1}
+  tracked_paths: 10
+  metadata_changed: 1
+  tracked_missing: 0
+  metadata_matches: 9
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  OBSERVED: The index differs from the physical HEAD tree in object IDs, paths, or modes. Staged work is at risk if only working files are preserved. Renames are counted as additions and deletions; blob availability was not checked.
+  Next: Preserve the repository including its index and objects and independently test its restore. A selected working-file match does not preserve staged-only work.
+  UNKNOWN: The supported index was compared with the physical HEAD tree by IDs and modes. This does not establish blob integrity, backup inclusion, other refs, or repository recoverability.
+  Next: Verify a separate repository restore including staging and the work you consider important.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] clone-transport (project)
+  Staging: unknown | Coverage: incomplete
+  Staged change counts (lower bounds): {"added": 0, "deleted": 0, "modified": 0}
+  tracked_paths: 10
+  metadata_changed: 1
+  tracked_missing: 0
+  metadata_matches: 9
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 1
+  branch_tips_absent_from_cached_remotes: 0
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  UNKNOWN: Staging comparison coverage is incomplete: loose_object_missing_packed_or_external_unsupported. Change counts are lower bounds; other staged work remains unknown.
+  Next: Independently review all staging and preserve index and objects; resolve every coverage gap.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] noise (project)
+  Staging: no_difference_observed | Coverage: complete
+  Staged change counts: {"added": 0, "deleted": 0, "modified": 0}
+  tracked_paths: 3
+  metadata_changed: 1
+  tracked_missing: 0
+  metadata_matches: 2
+  unmerged_entries: 0
+  submodules: 0
+  unchecked_entries: 0
+  files_outside_index: 0
+  local_branches: 2
+  branch_tips_absent_from_cached_remotes: 1
+  stash_ref_present: 0
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  INFERRED: Tracked file metadata differs from the Git index or a path is missing. This is an inference about working files, independent of the staging comparison.
+  Next: Review working and staged changes locally; preserve important work and test its recovery.
+  INFERRED: Some local branch tips do not exactly match cached remote tips. This does not prove commits are unpublished; ancestry and live remotes were not checked.
+  Next: Review all local branches; verify recovery from a separately restored repository.
+  UNKNOWN: The supported index was compared with the physical HEAD tree by IDs and modes. This does not establish blob integrity, backup inclusion, other refs, or repository recoverability.
+  Next: Verify a separate repository restore including staging and the work you consider important.
+  UNKNOWN: No network access occurred. Cached refs may be stale or locally edited; remote availability and history were not checked.
+  Next: Independently verify access to and recovery from the intended remote or backup.
+  UNKNOWN: This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.
+  Next: Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior.
+
+[ATTENTION] sessions (sessions)
+  Files inventoried: 2 (not a session count)
+  Bytes from metadata: 38
+  Inventory gaps: {"errors": 0, "excluded": 0, "git_entries_skipped": 0, "limited": false, "special": 0, "symlinks": 0}
+  UNKNOWN: Only directory entries and file sizes were inspected. Transcripts, databases, credentials, and session contents were not opened; file counts do not establish session counts.
+  Next: Use a trusted local backup workflow, then test opening restored sessions in the relevant tool. Do not add transcripts or databases to content verification: they may contain secrets.
+
+[UNKNOWN] working-copy (recovery)
+  content_read_not_authorized
+  Review selections for secrets, then run verify with --allow-content-read.
+
+Scope: Only explicitly declared roots and selections. No automatic discovery or network access.
+Privacy: Reports omit paths, filenames, branch names, remote URLs, hashes, and file contents. Item IDs are user supplied. Treat aggregate work metadata as private.
+Limits:
+  - This report is never permission to wipe a machine.
+  - Default assessment reads Git structure and filesystem metadata, not work-file or session contents.
+  - Authorized Git reads follow only local loose HEAD commit/tree references, including messages and filenames. Disguised objects may contain arbitrary bytes. Blob entries, packs, alternates, reflogs, config, and ignore rules are not followed.
+  - Excluded and undeclared work remains unknown. A concurrent scan is not an atomic snapshot.
+  - Content checks require explicit consent and non-sensitive selections; name exclusions cannot detect embedded secrets.
+  - No backup is created, restored, uploaded, or destroyed. Off-device survival is not established.

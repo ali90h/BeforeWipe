@@ -1,0 +1,15 @@
+test_differential_multifile_changes_against_git (test_object_review.ObjectReviewCase) ... ok
+test_failed_inflation_is_charged_to_total_budget (test_object_review.ObjectReviewCase) ... ok
+test_failed_metadata_reads_consume_compressed_budget (test_object_review.ObjectReviewCase) ... ok
+test_malformed_commit_order_cannot_confirm_baseline (test_object_review.ObjectReviewCase) ... ok
+test_packed_tree_with_loose_head_remains_incomplete (test_object_review.ObjectReviewCase) ... ok
+test_plan_cannot_grant_object_authorization (test_object_review.ObjectReviewCase) ... ok
+test_remote_symbolic_alias_does_not_block_comparison (test_object_review.ObjectReviewCase) ... ok
+test_symbolic_loose_ref_must_not_hide_real_staging (test_object_review.ObjectReviewCase) ... ok
+test_symbolic_loose_ref_must_not_use_shadowed_packed_tip (test_object_review.ObjectReviewCase) ... ok
+test_valid_extended_commit_headers_still_compare (test_object_review.ObjectReviewCase) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.733s
+
+OK

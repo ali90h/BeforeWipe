@@ -1,0 +1,8 @@
+{
+  "existing_destination_refused": true,
+  "refusal_tree_unchanged_excluding_atime": true,
+  "independent_inventory_tree_unchanged_excluding_atime": true,
+  "runtime_matches_security_review": true,
+  "recorded_source_hashes_match": true,
+  "all_seven_authorization_audits_passed": true
+}

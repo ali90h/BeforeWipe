@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25",
+  "environment": {
+    "os": "Darwin 27.0.0 arm64",
+    "python": "3.9.6",
+    "git": "2.50.1 (Apple Git-155)"
+  },
+  "tests": {
+    "original_passed_before_changes": 39,
+    "total_after_changes": 66,
+    "new_cases": 27,
+    "failures": 0,
+    "skipped": 0,
+    "duration_seconds": 7.027
+  },
+  "remote_ci_run": false,
+  "personal_data_scanned": false,
+  "readiness": "not_determined",
+  "source_sha256": {
+    "beforewipe/fs.py": "ad89d9bfbcfb62455f6a6f073d6dd2173e0ca00d1b1c298163418fa4821344be",
+    "beforewipe/gitmeta.py": "48e26ea165bb5d6e0ce24ddc1700a041cf9e47dfa25ccc10c67620aae5eac5ff",
+    "beforewipe/core.py": "ca7b8651905548b643a32d077f064eee1bd2305c3f83c50cb57a6be4587501df",
+    "beforewipe/demo.py": "e6623d472d9b909b97080f17224459e425f7e9adb256345f2a6208269483f008",
+    "beforewipe/__main__.py": "60dbac4cebc51d584e431435f3e6711cc5767de11fccd4227be71ded2af39403",
+    "tests/test_beforewipe.py": "73ae687a5d1441251e6e8396634e8ac4e0e5e997657deef03764d77bfec46664",
+    "tests/test_review.py": "c22d87a908f91ae4c2ad6e536f84a97c68c22896d8551bf06ee6e804e0721fee"
+  }
+}

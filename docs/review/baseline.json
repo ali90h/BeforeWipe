@@ -1,0 +1,42 @@
+{
+  "tests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "demo": {
+    "assess_exit": 1,
+    "assess_summary": {
+      "attention": 2,
+      "unknown": 3,
+      "verified_content_match": 0
+    },
+    "verify_exit": 1,
+    "verify_summary": {
+      "attention": 3,
+      "unknown": 1,
+      "verified_content_match": 1
+    }
+  },
+  "source_sha256": {
+    "beforewipe/fs.py": "14bd280f8db8985379818c793bb8efe09eaf01983e14e32a596f824fcd9a8204",
+    "beforewipe/gitmeta.py": "e8448398b742e39bd93a6bb270d385c9e1f1dc9d8b3d3aae522e98d20b836cab",
+    "beforewipe/core.py": "fcc3660c49fd9a71301094f453d489995e9cab78ba1e14f03bfdeea61de0d4d4",
+    "beforewipe/demo.py": "6739bca32bef30f0bf2954cbb834b0c63c9637a275c65087f83d189d25d5d3b7",
+    "beforewipe/__main__.py": "60dbac4cebc51d584e431435f3e6711cc5767de11fccd4227be71ded2af39403",
+    "tests/test_beforewipe.py": "79837da474e74466e028463488b9323ecdcaa307a742c2d00a29d8c73f5a70c0"
+  },
+  "reproductions": {
+    "staged_only": {
+      "git_diff_cached": "M notes.md",
+      "metadata_changed": 0,
+      "metadata_matches": 3,
+      "status": "unknown"
+    },
+    "hardlink_substitution": {
+      "status": "match",
+      "reason": "selected_bytes_equal"
+    },
+    "hardlinked_ref": "os.read consumed synthetic work-file bytes via refs/heads/main",
+    "nested_git": "all inventory gap counters zero; no coverage_gaps finding"
+  }
+}

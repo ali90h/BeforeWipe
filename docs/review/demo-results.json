@@ -1,0 +1,38 @@
+{
+  "existing_assess": {
+    "exit_code": 1,
+    "summary": {
+      "attention": 2,
+      "unknown": 3,
+      "verified_content_match": 0
+    },
+    "readiness": "not_determined"
+  },
+  "existing_verify": {
+    "exit_code": 1,
+    "summary": {
+      "attention": 3,
+      "unknown": 1,
+      "verified_content_match": 1
+    },
+    "readiness": "not_determined"
+  },
+  "fresh_assess": {
+    "exit_code": 1,
+    "summary": {
+      "attention": 2,
+      "unknown": 3,
+      "verified_content_match": 0
+    },
+    "readiness": "not_determined"
+  },
+  "fresh_verify": {
+    "exit_code": 1,
+    "summary": {
+      "attention": 3,
+      "unknown": 1,
+      "verified_content_match": 1
+    },
+    "readiness": "not_determined"
+  }
+}

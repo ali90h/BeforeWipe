@@ -1,0 +1,33 @@
+{
+  "review_date": "2026-10-26",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.9.6",
+  "git": "git version 2.50.1 (Apple Git-155)",
+  "initial_suite": {
+    "tests": 99,
+    "failures": 0,
+    "skips": 0,
+    "seconds": 10.729
+  },
+  "final_suite": {
+    "tests": 109,
+    "failures": 0,
+    "skips": 0
+  },
+  "sha256": {
+    "beforewipe/__init__.py": "9b56d1334b148366b63474d3bfd3f9b93807eb45a8e9284e47c9ab157aeaab52",
+    "beforewipe/__main__.py": "7a2d0206af492ceee88b7ac77a142bad79f03f6c74c87bd72862a7e3893a87dd",
+    "beforewipe/core.py": "eccb4836232a006ba69800efe079efdb611abc4b1f119f48e1b50206d6456252",
+    "beforewipe/demo.py": "e6623d472d9b909b97080f17224459e425f7e9adb256345f2a6208269483f008",
+    "beforewipe/fs.py": "ad89d9bfbcfb62455f6a6f073d6dd2173e0ca00d1b1c298163418fa4821344be",
+    "beforewipe/gitmeta.py": "165e26922f9dda5ad5dd5efe3d35c55e1588b25d6ed9d94a6d1d6e50134f6d83",
+    "beforewipe/staging.py": "2ba669fac07498d6b262323b497f936bebfd622e0589a288a2d0e467793e7319",
+    "tests/test_beforewipe.py": "73ae687a5d1441251e6e8396634e8ac4e0e5e997657deef03764d77bfec46664",
+    "tests/test_object_review.py": "367701753b6b43cfb6d7930ce70b637b1cdbb8660d7d1097efa93b7e38842d63",
+    "tests/test_review.py": "c22d87a908f91ae4c2ad6e536f84a97c68c22896d8551bf06ee6e804e0721fee",
+    "tests/test_staging.py": "6dd033ce2561d8adbaa804ab4dec9305af7127a3dc10a96e0abdb13a54772bda",
+    "docs/object-review/before/fs.py": "ad89d9bfbcfb62455f6a6f073d6dd2173e0ca00d1b1c298163418fa4821344be",
+    "docs/object-review/before/gitmeta.py": "90a5ebbc60201df6248dd51534e4fc07c4f04c3169e0d6d3e8ce40e3667d72b4",
+    "docs/object-review/before/staging.py": "d4daf3045ed0a89c72e2ac929bf8db0eb1b4049c0a937db35b9c66868b1b6a13"
+  }
+}

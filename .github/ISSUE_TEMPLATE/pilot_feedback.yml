@@ -1,0 +1,24 @@
+name: Synthetic pilot feedback
+description: Share observations from the invented-data exercise only.
+title: '[Pilot feedback] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public feedback must concern synthetic fixtures only. Keep real-data worksheets and reports with the participant. Do not upload them here, even if paths seem redacted.
+  - type: textarea
+    id: observations
+    attributes:
+      label: What was useful or confusing?
+      description: Describe the synthetic finding, time spent, missing explanation and intended next action. Include the Alpha tag and platform versions.
+    validations:
+      required: true
+  - type: checkboxes
+    id: limits
+    attributes:
+      label: Check before posting
+      options:
+        - label: This feedback contains no real project data, personal paths, transcripts, plans, reports or credentials.
+          required: true
+        - label: I understand that a content match or exit 0 does not establish recovery or wipe safety.
+          required: true

@@ -1,0 +1,19 @@
+BeforeWipe — scoped evidence report
+Machine wipe readiness: NOT DETERMINED
+Checked: 2026-10-26T10:20:35.332254+00:00
+Attention: 0 | Unknown: 0 | Selected content matches verified: 1
+
+[VERIFIED_CONTENT_MATCH] working-copy (recovery)
+  Selection 1: match (selected_bytes_equal)
+  Byte equality of selected files only, at check time. Does not prove off-device survival, backup independence, permissions, history, staging, application usability, or complete recovery. A selected-file match does not preserve staged-only work.
+  Repeat after any source or restored-copy change; independently confirm the backup survives the wipe.
+
+Scope: Only explicitly declared roots and selections. No automatic discovery or network access.
+Privacy: Reports omit paths, filenames, branch names, remote URLs, hashes, and file contents. Item IDs are user supplied. Treat aggregate work metadata as private.
+Limits:
+  - This report is never permission to wipe a machine.
+  - Default assessment reads Git structure and filesystem metadata, not work-file or session contents.
+  - Metadata cannot detect all working or staged changes. Git objects, reflogs, ignored-file rules, and config are not read.
+  - Excluded and undeclared work remains unknown. A concurrent scan is not an atomic snapshot.
+  - Content checks require explicit consent and non-sensitive selections; name exclusions cannot detect embedded secrets.
+  - No backup is created, restored, uploaded, or destroyed. Off-device survival is not established.

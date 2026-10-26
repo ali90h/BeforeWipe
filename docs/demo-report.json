@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "beforewipe_version": "0.1.0",
+  "checked_at": "2026-10-25T08:48:54.614691+00:00",
+  "readiness": "not_determined",
+  "summary": {
+    "attention": 3,
+    "unknown": 1,
+    "verified_content_match": 1
+  },
+  "items": [
+    {
+      "id": "demo-project",
+      "kind": "project",
+      "status": "attention",
+      "findings": [
+        {
+          "code": "working_tree_metadata_differs",
+          "evidence": "inferred",
+          "detail": "Tracked file metadata differs from the Git index or a path is missing. Content and staging differences have not been inspected.",
+          "next_action": "Review working and staged changes locally; preserve important work and test its recovery."
+        },
+        {
+          "code": "files_outside_index",
+          "evidence": "observed",
+          "detail": "Files exist outside the index. This includes ignored files; importance is unknown.",
+          "next_action": "Review untracked and ignored work locally and select important non-sensitive files for recovery checks."
+        },
+        {
+          "code": "coverage_gaps",
+          "evidence": "unknown",
+          "detail": "Some entries were excluded, unsupported, inaccessible, or beyond scan limits.",
+          "next_action": "Review excluded content, nested repositories, submodules, and sensitive material with appropriate tools."
+        },
+        {
+          "code": "staging_unchecked",
+          "evidence": "unknown",
+          "detail": "Staging is NOT inspected. Staged additions, edits, deletions, and renames can be missed even when every tracked path has matching metadata. Work can exist only in the index's referenced objects.",
+          "next_action": "Review the staging area independently. Preserve the repository including its index and objects; matching selected working files does not preserve staged-only work."
+        },
+        {
+          "code": "remote_state_unverified",
+          "evidence": "unknown",
+          "detail": "No network access occurred. Cached refs may be stale or locally edited, and commit objects were not checked.",
+          "next_action": "Independently verify access to and recovery from the intended remote or backup."
+        },
+        {
+          "code": "project_recovery_unverified",
+          "evidence": "unknown",
+          "detail": "This project has no verified repository restore or runnable-environment evidence. File checks, if present, cover only their explicit selections.",
+          "next_action": "Restore the repository separately and check history, branches, stashes, required files, and build/runtime behavior."
+        }
+      ],
+      "observations": {
+        "counts": {
+          "tracked_paths": 3,
+          "metadata_changed": 1,
+          "tracked_missing": 0,
+          "metadata_matches": 2,
+          "unmerged_entries": 0,
+          "submodules": 0,
+          "unchecked_entries": 0,
+          "files_outside_index": 2,
+          "local_branches": 1,
+          "branch_tips_absent_from_cached_remotes": 0,
+          "stash_ref_present": 0
+        },
+        "inventory": {
+          "excluded": 1,
+          "symlinks": 0,
+          "errors": 0,
+          "special": 0,
+          "limited": false,
+          "git_entries_skipped": 0
+        },
+        "index_present": true,
+        "coverage_errors": [],
+        "detached_head": false,
+        "staging_status": "unknown",
+        "recoverability": "unknown"
+      }
+    },
+    {
+      "id": "demo-sessions",
+      "kind": "sessions",
+      "status": "attention",
+      "observations": {
+        "tool": "codex",
+        "regular_files": 1,
+        "bytes_from_metadata": 53,
+        "inventory": {
+          "excluded": 0,
+          "symlinks": 0,
+          "errors": 0,
+          "special": 0,
+          "limited": false,
+          "git_entries_skipped": 0
+        },
+        "recoverability": "unknown"
+      },
+      "findings": [
+        {
+          "code": "sessions_not_recovery_tested",
+          "evidence": "unknown",
+          "detail": "Only directory entries and file sizes were inspected. Transcripts, databases, credentials, and session contents were not opened; file counts do not establish session counts.",
+          "next_action": "Use a trusted local backup workflow, then test opening restored sessions in the relevant tool. Do not add transcripts or databases to content verification: they may contain secrets."
+        }
+      ]
+    },
+    {
+      "id": "recovered-code",
+      "kind": "recovery",
+      "status": "verified_content_match",
+      "evidence": "verified",
+      "selected_files": 1,
+      "checks": [
+        {
+          "selection": 1,
+          "status": "match",
+          "reason": "selected_bytes_equal"
+        }
+      ],
+      "verification_scope": "selected_file_bytes",
+      "recoverability": "unknown",
+      "limits": "Byte equality of selected files only, at check time. Does not prove off-device survival, backup independence, permissions, history, application usability, or complete recovery.",
+      "next_action": "Repeat after any source or restored-copy change; independently confirm the backup survives the wipe."
+    },
+    {
+      "id": "stale-notes",
+      "kind": "recovery",
+      "status": "attention",
+      "evidence": "observed",
+      "selected_files": 1,
+      "checks": [
+        {
+          "selection": 1,
+          "status": "mismatch",
+          "reason": "selected_bytes_differ"
+        }
+      ],
+      "verification_scope": "selected_file_bytes",
+      "recoverability": "unknown",
+      "limits": "Byte equality of selected files only, at check time. Does not prove off-device survival, backup independence, permissions, history, application usability, or complete recovery.",
+      "next_action": "Review each missing, refused, inaccessible, or differing selection and repeat the restore check."
+    },
+    {
+      "id": "missing-idea",
+      "kind": "recovery",
+      "status": "unknown",
+      "evidence": "unknown",
+      "selected_files": 1,
+      "checks": [
+        {
+          "selection": 1,
+          "status": "unknown",
+          "reason": "selected_file_missing"
+        }
+      ],
+      "verification_scope": "selected_file_bytes",
+      "recoverability": "unknown",
+      "limits": "Byte equality of selected files only, at check time. Does not prove off-device survival, backup independence, permissions, history, application usability, or complete recovery.",
+      "next_action": "Review each missing, refused, inaccessible, or differing selection and repeat the restore check."
+    }
+  ],
+  "scope": "Only explicitly declared roots and selections. No automatic discovery or network access.",
+  "privacy": "Reports omit paths, filenames, branch names, remote URLs, hashes, and file contents. Item IDs are user supplied. Treat aggregate work metadata as private.",
+  "limits": [
+    "This report is never permission to wipe a machine.",
+    "Default assessment reads Git structure and filesystem metadata, not work-file or session contents.",
+    "Metadata cannot detect all working or staged changes. Git objects, reflogs, ignored-file rules, and config are not read.",
+    "Excluded and undeclared work remains unknown. A concurrent scan is not an atomic snapshot.",
+    "Content checks require explicit consent and non-sensitive selections; name exclusions cannot detect embedded secrets.",
+    "No backup is created, restored, uploaded, or destroyed. Off-device survival is not established."
+  ]
+}

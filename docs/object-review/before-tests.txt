@@ -1,0 +1,65 @@
+test_differential_multifile_changes_against_git (test_object_review.ObjectReviewCase) ... ok
+test_failed_inflation_is_charged_to_total_budget (test_object_review.ObjectReviewCase) ... FAIL
+test_failed_metadata_reads_consume_compressed_budget (test_object_review.ObjectReviewCase) ... test_malformed_commit_order_cannot_confirm_baseline (test_object_review.ObjectReviewCase) ... FAIL
+test_packed_tree_with_loose_head_remains_incomplete (test_object_review.ObjectReviewCase) ... ok
+test_plan_cannot_grant_object_authorization (test_object_review.ObjectReviewCase) ... ok
+test_remote_symbolic_alias_does_not_block_comparison (test_object_review.ObjectReviewCase) ... ok
+test_symbolic_loose_ref_must_not_hide_real_staging (test_object_review.ObjectReviewCase) ... FAIL
+test_symbolic_loose_ref_must_not_use_shadowed_packed_tip (test_object_review.ObjectReviewCase) ... FAIL
+test_valid_extended_commit_headers_still_compare (test_object_review.ObjectReviewCase) ... ok
+
+======================================================================
+FAIL: test_failed_inflation_is_charged_to_total_budget (test_object_review.ObjectReviewCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/BeforeWipe/tests/test_object_review.py", line 75, in test_failed_inflation_is_charged_to_total_budget
+    self.assertGreaterEqual(reader.total, 2048)
+AssertionError: 0 not greater than or equal to 2048
+
+======================================================================
+FAIL: test_failed_metadata_reads_consume_compressed_budget (test_object_review.ObjectReviewCase) (mutation='timestamp')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/BeforeWipe/tests/test_object_review.py", line 111, in test_failed_metadata_reads_consume_compressed_budget
+    self.assertLessEqual(consumed, 2048)
+AssertionError: 4500 not less than or equal to 2048
+
+======================================================================
+FAIL: test_failed_metadata_reads_consume_compressed_budget (test_object_review.ObjectReviewCase) (mutation='rename')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/BeforeWipe/tests/test_object_review.py", line 111, in test_failed_metadata_reads_consume_compressed_budget
+    self.assertLessEqual(consumed, 2048)
+AssertionError: 4500 not less than or equal to 2048
+
+======================================================================
+FAIL: test_malformed_commit_order_cannot_confirm_baseline (test_object_review.ObjectReviewCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/BeforeWipe/tests/test_object_review.py", line 59, in test_malformed_commit_order_cannot_confirm_baseline
+    self.assertEqual(self.staging()['status'], 'unknown')
+AssertionError: 'no_difference_observed' != 'unknown'
+- no_difference_observed
++ unknown
+
+
+======================================================================
+FAIL: test_symbolic_loose_ref_must_not_hide_real_staging (test_object_review.ObjectReviewCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/BeforeWipe/tests/test_object_review.py", line 46, in test_symbolic_loose_ref_must_not_hide_real_staging
+    self.assertNotEqual(self.staging()['status'], 'no_difference_observed')
+AssertionError: 'no_difference_observed' == 'no_difference_observed'
+
+======================================================================
+FAIL: test_symbolic_loose_ref_must_not_use_shadowed_packed_tip (test_object_review.ObjectReviewCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/BeforeWipe/tests/test_object_review.py", line 37, in test_symbolic_loose_ref_must_not_use_shadowed_packed_tip
+    self.assertNotEqual(result['status'], 'confirmed_risk')
+AssertionError: 'confirmed_risk' == 'confirmed_risk'
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.732s
+
+FAILED (failures=6)

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beforewipe"
+version = "0.1.0"
+description = "Local, explicitly scoped pre-wipe risk and recovery evidence"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+beforewipe = "beforewipe.__main__:main"
+
+[tool.setuptools]
+packages = ["beforewipe"]

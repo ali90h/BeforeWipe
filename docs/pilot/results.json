@@ -1,0 +1,1326 @@
+{
+  "synthetic_only": true,
+  "human_participants": 0,
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "git": "git version 2.50.1 (Apple Git-155)"
+  },
+  "runs": {
+    "01-default": {
+      "exit": 1,
+      "summary": {
+        "attention": 8,
+        "unknown": 3,
+        "verified_content_match": 0
+      },
+      "seconds_cli_and_audit": 0.367,
+      "audited_byte_read_inodes": 40,
+      "audited_directory_enumerations": 61,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "loose": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "gc": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "mixed": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "index-v4": {
+          "status": "unknown",
+          "staging": {
+            "status": "unsupported",
+            "coverage": "unsupported",
+            "reason_codes": [
+              "unsupported_git_index_version"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": "unsupported_git_index_version",
+          "checks": null
+        },
+        "reflog": {
+          "status": "unknown",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-local": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-copy": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-transport": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "noise": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "sessions": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": null
+        },
+        "working-copy": {
+          "status": "unknown",
+          "staging": null,
+          "reason": "content_read_not_authorized",
+          "checks": null
+        }
+      }
+    },
+    "02-objects-only": {
+      "exit": 1,
+      "summary": {
+        "attention": 8,
+        "unknown": 3,
+        "verified_content_match": 0
+      },
+      "seconds_cli_and_audit": 0.399,
+      "audited_byte_read_inodes": 54,
+      "audited_directory_enumerations": 101,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "loose": {
+          "status": "attention",
+          "staging": {
+            "status": "confirmed_risk",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 1,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 3
+          },
+          "reason": null,
+          "checks": null
+        },
+        "gc": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "loose_object_missing_packed_or_external_unsupported"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "mixed": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "loose_object_missing_packed_or_external_unsupported"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "index-v4": {
+          "status": "unknown",
+          "staging": {
+            "status": "unsupported",
+            "coverage": "unsupported",
+            "reason_codes": [
+              "unsupported_git_index_version"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": "unsupported_git_index_version",
+          "checks": null
+        },
+        "reflog": {
+          "status": "unknown",
+          "staging": {
+            "status": "no_difference_observed",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 3
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-local": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "hardlinked_metadata_refused"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-copy": {
+          "status": "attention",
+          "staging": {
+            "status": "confirmed_risk",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 1,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 10
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-transport": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "loose_object_missing_packed_or_external_unsupported"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "noise": {
+          "status": "attention",
+          "staging": {
+            "status": "no_difference_observed",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 3
+          },
+          "reason": null,
+          "checks": null
+        },
+        "sessions": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": null
+        },
+        "working-copy": {
+          "status": "unknown",
+          "staging": null,
+          "reason": "content_read_not_authorized",
+          "checks": null
+        }
+      }
+    },
+    "03-content-only": {
+      "exit": 1,
+      "summary": {
+        "attention": 8,
+        "unknown": 2,
+        "verified_content_match": 1
+      },
+      "seconds_cli_and_audit": 0.365,
+      "audited_byte_read_inodes": 42,
+      "audited_directory_enumerations": 61,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "loose": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "gc": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "mixed": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "index-v4": {
+          "status": "unknown",
+          "staging": {
+            "status": "unsupported",
+            "coverage": "unsupported",
+            "reason_codes": [
+              "unsupported_git_index_version"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": "unsupported_git_index_version",
+          "checks": null
+        },
+        "reflog": {
+          "status": "unknown",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-local": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-copy": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-transport": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "noise": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "sessions": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": null
+        },
+        "working-copy": {
+          "status": "verified_content_match",
+          "staging": null,
+          "reason": null,
+          "checks": [
+            {
+              "selection": 1,
+              "status": "match",
+              "reason": "selected_bytes_equal"
+            }
+          ]
+        }
+      }
+    },
+    "04-both": {
+      "exit": 1,
+      "summary": {
+        "attention": 8,
+        "unknown": 2,
+        "verified_content_match": 1
+      },
+      "seconds_cli_and_audit": 0.395,
+      "audited_byte_read_inodes": 56,
+      "audited_directory_enumerations": 101,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "loose": {
+          "status": "attention",
+          "staging": {
+            "status": "confirmed_risk",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 1,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 3
+          },
+          "reason": null,
+          "checks": null
+        },
+        "gc": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "loose_object_missing_packed_or_external_unsupported"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "mixed": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "loose_object_missing_packed_or_external_unsupported"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "index-v4": {
+          "status": "unknown",
+          "staging": {
+            "status": "unsupported",
+            "coverage": "unsupported",
+            "reason_codes": [
+              "unsupported_git_index_version"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": "unsupported_git_index_version",
+          "checks": null
+        },
+        "reflog": {
+          "status": "unknown",
+          "staging": {
+            "status": "no_difference_observed",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 3
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-local": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "hardlinked_metadata_refused"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-copy": {
+          "status": "attention",
+          "staging": {
+            "status": "confirmed_risk",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 1,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 10
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-transport": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "incomplete",
+            "reason_codes": [
+              "loose_object_missing_packed_or_external_unsupported"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "noise": {
+          "status": "attention",
+          "staging": {
+            "status": "no_difference_observed",
+            "coverage": "complete",
+            "reason_codes": [],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": false,
+            "paths_compared": 3
+          },
+          "reason": null,
+          "checks": null
+        },
+        "sessions": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": null
+        },
+        "working-copy": {
+          "status": "verified_content_match",
+          "staging": null,
+          "reason": null,
+          "checks": [
+            {
+              "selection": 1,
+              "status": "match",
+              "reason": "selected_bytes_equal"
+            }
+          ]
+        }
+      }
+    },
+    "05-revised-selections": {
+      "exit": 1,
+      "summary": {
+        "attention": 9,
+        "unknown": 2,
+        "verified_content_match": 0
+      },
+      "seconds_cli_and_audit": 0.372,
+      "audited_byte_read_inodes": 44,
+      "audited_directory_enumerations": 61,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "loose": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "gc": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "mixed": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "index-v4": {
+          "status": "unknown",
+          "staging": {
+            "status": "unsupported",
+            "coverage": "unsupported",
+            "reason_codes": [
+              "unsupported_git_index_version"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": "unsupported_git_index_version",
+          "checks": null
+        },
+        "reflog": {
+          "status": "unknown",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-local": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-copy": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-transport": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "noise": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "sessions": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": null
+        },
+        "working-copy": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": [
+            {
+              "selection": 1,
+              "status": "match",
+              "reason": "selected_bytes_equal"
+            },
+            {
+              "selection": 2,
+              "status": "mismatch",
+              "reason": "selected_bytes_differ"
+            },
+            {
+              "selection": 3,
+              "status": "unknown",
+              "reason": "selected_file_missing"
+            }
+          ]
+        }
+      }
+    },
+    "06-approved-new-root": {
+      "exit": 1,
+      "summary": {
+        "attention": 9,
+        "unknown": 3,
+        "verified_content_match": 0
+      },
+      "seconds_cli_and_audit": 0.373,
+      "audited_byte_read_inodes": 44,
+      "audited_directory_enumerations": 68,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "loose": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "gc": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "mixed": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "index-v4": {
+          "status": "unknown",
+          "staging": {
+            "status": "unsupported",
+            "coverage": "unsupported",
+            "reason_codes": [
+              "unsupported_git_index_version"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": "unsupported_git_index_version",
+          "checks": null
+        },
+        "reflog": {
+          "status": "unknown",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-local": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-copy": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "clone-transport": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "noise": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "forgotten": {
+          "status": "attention",
+          "staging": {
+            "status": "unknown",
+            "coverage": "not_inspected",
+            "reason_codes": [
+              "git_object_read_not_authorized"
+            ],
+            "comparison": "index_vs_physical_head_tree_ids_and_modes",
+            "changes": {
+              "added": 0,
+              "modified": 0,
+              "deleted": 0
+            },
+            "counts_are_lower_bounds": true,
+            "paths_compared": 0
+          },
+          "reason": null,
+          "checks": null
+        },
+        "sessions": {
+          "status": "attention",
+          "staging": null,
+          "reason": null,
+          "checks": null
+        },
+        "working-copy": {
+          "status": "unknown",
+          "staging": null,
+          "reason": "content_read_not_authorized",
+          "checks": null
+        }
+      }
+    },
+    "07-recovery-only": {
+      "exit": 0,
+      "summary": {
+        "attention": 0,
+        "unknown": 0,
+        "verified_content_match": 1
+      },
+      "seconds_cli_and_audit": 0.32,
+      "audited_byte_read_inodes": 3,
+      "audited_directory_enumerations": 0,
+      "scope_and_authorization_audit": "passed",
+      "fixtures_unchanged_excluding_atime": true,
+      "items": {
+        "working-copy": {
+          "status": "verified_content_match",
+          "staging": null,
+          "reason": null,
+          "checks": [
+            {
+              "selection": 1,
+              "status": "match",
+              "reason": "selected_bytes_equal"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "authorization_refusals": {
+    "plan_injection_exit": 2,
+    "verify_without_consent_exit": 2
+  },
+  "source_sha256": {
+    "beforewipe/__init__.py": "9b56d1334b148366b63474d3bfd3f9b93807eb45a8e9284e47c9ab157aeaab52",
+    "beforewipe/core.py": "eccb4836232a006ba69800efe079efdb611abc4b1f119f48e1b50206d6456252",
+    "beforewipe/gitmeta.py": "165e26922f9dda5ad5dd5efe3d35c55e1588b25d6ed9d94a6d1d6e50134f6d83",
+    "beforewipe/fs.py": "ad89d9bfbcfb62455f6a6f073d6dd2173e0ca00d1b1c298163418fa4821344be",
+    "beforewipe/demo.py": "e6623d472d9b909b97080f17224459e425f7e9adb256345f2a6208269483f008",
+    "beforewipe/staging.py": "2ba669fac07498d6b262323b497f936bebfd622e0589a288a2d0e467793e7319",
+    "beforewipe/__main__.py": "7a2d0206af492ceee88b7ac77a142bad79f03f6c74c87bd72862a7e3893a87dd",
+    "scripts/pilot_dry_run.py": "41f817ffd4d4feeed487af7e6322306de6b096fee4e848951e5a3de78a79f3d1"
+  }
+}

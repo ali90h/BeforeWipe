@@ -1,0 +1,36 @@
+name: Synthetic bug report
+description: Report a reproducible problem using invented data only.
+title: '[Bug] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not attach real plans, reports, transcripts, paths, screenshots, credentials, or confidential repositories. Use synthetic data only. For security vulnerabilities, read SECURITY.md first.
+  - type: input
+    id: environment
+    attributes:
+      label: Alpha tag, OS, Python and Git versions
+      placeholder: v0.1.0-alpha.1; OS version; Python version; Git version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps using a new synthetic fixture
+      description: Include invented example input and the flags used. No real machine data.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected and observed behavior
+      description: Include exit status and fixed reason codes if useful; do not paste a real report.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: All submitted information is synthetic and contains no private data or working credentials.
+          required: true

@@ -1,0 +1,98 @@
+--- before/gitmeta.py
++++ after/gitmeta.py
+@@ -128,12 +128,19 @@
+         raise ScopeError("incomplete_git_refs")
+     for parts in files:
+         value = root.metadata(parts, 256).strip()
++        name = "/".join(parts[1:])
+         if value.startswith(b"ref: "):
+-            # A symbolic remote HEAD is an alias, not evidence of another tip.
+-            continue
++            # Loose refs override packed refs even when symbolic. Skipping one
++            # can silently resurrect a stale packed tip as the HEAD baseline.
++            if name.startswith("refs/remotes/"):
++                # Remote aliases never supply our physical HEAD baseline and
++                # are not independent cached tips. Remove a shadowed tip too.
++                values.pop(name, None)
++                continue
++            raise ScopeError("symbolic_git_refs_unsupported")
+         if not OID.fullmatch(value):
+             raise ScopeError("unsupported_or_invalid_git_refs")
+-        values["/".join(parts[1:])] = value
++        values[name] = value
+     return values
+ 
+ 
+--- before/staging.py
++++ after/staging.py
+@@ -42,18 +42,29 @@
+         compressed_limit = min(MAX_OBJECT_BYTES, MAX_TOTAL_BYTES - self.compressed_total)
+         if compressed_limit <= 0:
+             raise ScopeError("git_object_byte_limit")
+-        try:
+-            compressed = self.root.metadata((".git", "objects", name[:2], name[2:]), compressed_limit)
+-        except FileNotFoundError:
+-            raise ScopeError("loose_object_missing_packed_or_external_unsupported") from None
+-        self.compressed_total += len(compressed)
+         limit = min(MAX_OBJECT_BYTES, MAX_TOTAL_BYTES - self.total)
+         if limit <= 0:
+             raise ScopeError("git_object_byte_limit")
+         try:
++            compressed = self.root.metadata((".git", "objects", name[:2], name[2:]), compressed_limit)
++        except FileNotFoundError:
++            # This can also be the final path check after bytes were consumed.
++            self.compressed_total += compressed_limit + 1
++            raise ScopeError("loose_object_missing_packed_or_external_unsupported") from None
++        except (ScopeError, OSError):
++            # The metadata reader may have consumed bytes before rejecting a
++            # mutation. Its failure does not report how many: charge the maximum.
++            self.compressed_total += compressed_limit + 1
++            raise
++        self.compressed_total += len(compressed)
++        try:
+             inflater = zlib.decompressobj()
+             raw = inflater.decompress(compressed, limit + 1)
+         except zlib.error:
++            # A bad checksum can fail only after inflating the entire payload.
++            # zlib does not return those bytes on error; conservatively charge
++            # the output cap so repeated corrupt trees cannot evade the budget.
++            self.total += limit + 1
+             raise ScopeError("invalid_git_object_compression") from None
+         self.total += len(raw)
+         if len(raw) > limit:
+@@ -109,6 +120,9 @@
+     try:
+         commit = reader.read(head_oid, b"commit")
+         headers, separator, _ = commit.partition(b"\n\n")
++        # Bound parsing allocations separately from the object/message budget.
++        if len(headers) > 65536:
++            raise ScopeError("git_commit_header_limit")
+         lines = headers.split(b"\n")
+         first = lines[0]
+         if (not separator or b"\0" in commit
+@@ -119,6 +133,25 @@
+                 or any(line.startswith(b"parent ") and not re.fullmatch(rb"parent [0-9a-f]{40}", line)
+                        for line in lines[1:])):
+             raise ScopeError("invalid_git_commit_tree")
++        position = 1
++        while position < len(lines) and lines[position].startswith(b"parent "):
++            if not any(bytes.fromhex(lines[position][7:].decode("ascii"))):
++                raise ScopeError("invalid_git_commit_tree")
++            position += 1
++        identity = rb"[^<>\x00\n]* <[^<>\x00\n]*> [0-9]+ [+-][0-9]{4}"
++        if (position + 1 >= len(lines)
++                or not re.fullmatch(b"author " + identity, lines[position])
++                or not re.fullmatch(b"committer " + identity, lines[position + 1])):
++            raise ScopeError("invalid_git_commit_tree")
++        continuation = False
++        for line in lines[position + 2:]:
++            if line.startswith(b" ") and continuation:
++                continue
++            key, space, value = line.partition(b" ")
++            if (not space or not re.fullmatch(rb"[a-zA-Z0-9-]+", key)
++                    or key in (b"tree", b"parent", b"author", b"committer")):
++                raise ScopeError("invalid_git_commit_tree")
++            continuation = True
+         try:
+             tree_oid = bytes.fromhex(first[5:].decode("ascii"))
+         except (ValueError, UnicodeError):

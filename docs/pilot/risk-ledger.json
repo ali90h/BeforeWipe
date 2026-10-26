@@ -1,0 +1,218 @@
+{
+  "synthetic_only": true,
+  "human_discovery_results": null,
+  "classification_note": "Manual scenario reconciliation against saved oracle and actual CLI outputs; no population recall or participant importance judgments.",
+  "cases": [
+    {
+      "case": "loose-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "confirmed_risk",
+      "evidence": [
+        "oracle.json:projects.loose",
+        "02-objects-only.json:loose"
+      ],
+      "classification": "specific_detection"
+    },
+    {
+      "case": "clone-copy-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "confirmed_risk",
+      "evidence": [
+        "oracle.json:projects.clone-copy",
+        "02-objects-only.json:clone-copy"
+      ],
+      "classification": "specific_detection"
+    },
+    {
+      "case": "clone-transport-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "unknown_packed",
+      "evidence": [
+        "oracle.json:projects.clone-transport",
+        "02-objects-only.json:clone-transport"
+      ],
+      "classification": "specific_risk_not_diagnosed_with_explicit_gap"
+    },
+    {
+      "case": "gc-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "unknown_packed",
+      "evidence": [
+        "oracle.json:projects.gc",
+        "02-objects-only.json:gc"
+      ],
+      "classification": "specific_risk_not_diagnosed_with_explicit_gap"
+    },
+    {
+      "case": "mixed-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "unknown_packed_trees",
+      "evidence": [
+        "oracle.json:projects.mixed",
+        "02-objects-only.json:mixed"
+      ],
+      "classification": "specific_risk_not_diagnosed_with_explicit_gap"
+    },
+    {
+      "case": "clone-local-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "unknown_hardlink_refused",
+      "evidence": [
+        "oracle.json:projects.clone-local",
+        "02-objects-only.json:clone-local"
+      ],
+      "classification": "specific_risk_not_diagnosed_with_explicit_gap"
+    },
+    {
+      "case": "index-v4-staging",
+      "synthetic_important": true,
+      "truth": "one staged modification; working app equals HEAD; staged bytes differ",
+      "default": "not diagnosed; staging uninspected or unsupported",
+      "with_object_consent": "unsupported",
+      "evidence": [
+        "oracle.json:projects.index-v4",
+        "02-objects-only.json:index-v4"
+      ],
+      "classification": "specific_risk_not_diagnosed_with_explicit_gap"
+    },
+    {
+      "case": "reflog",
+      "synthetic_important": true,
+      "truth": "important commit exists in reflog but no surviving ref contains it",
+      "outcome": "no specific diagnosis; complete current staging; project recovery unknown",
+      "classification": "miss_with_general_limits",
+      "evidence": [
+        "oracle.json:recovery.reflog_mentions_commit",
+        "04-both.json:reflog"
+      ]
+    },
+    {
+      "case": "forgotten",
+      "synthetic_important": true,
+      "truth": "important untracked work outside initial scope",
+      "outcome": "not discovered until separately approved new-root plan",
+      "classification": "outside_scope_miss",
+      "evidence": [
+        "01-default.json",
+        "06-approved-new-root.json:forgotten"
+      ]
+    },
+    {
+      "case": "idea-and-scratch",
+      "synthetic_important": true,
+      "truth": "important untracked idea and ignored scratch",
+      "outcome": "files_outside_index aggregate prompt; importance requires manual review",
+      "classification": "aggregate_prompt",
+      "evidence": [
+        "04-both.json:loose"
+      ]
+    },
+    {
+      "case": "stash",
+      "synthetic_important": true,
+      "truth": "important synthetic stash exists",
+      "outcome": "stash_present; recovery unknown",
+      "classification": "specific_presence_detection",
+      "evidence": [
+        "04-both.json:loose",
+        "oracle.json:recovery.full_copy_stash_equal"
+      ]
+    },
+    {
+      "case": "excluded-config",
+      "synthetic_important": true,
+      "truth": "needed synthetic .env excluded",
+      "outcome": "coverage_gaps; no specific contents/recovery diagnosis",
+      "classification": "explicit_gap",
+      "evidence": [
+        "04-both.json:loose"
+      ]
+    },
+    {
+      "case": "session-copy",
+      "synthetic_important": true,
+      "truth": "copy missing second session file",
+      "outcome": "inventory source only; no missing-copy diagnosis",
+      "classification": "not_diagnosed_recovery_unknown",
+      "evidence": [
+        "oracle.json:recovery.session_copy_missing_files",
+        "04-both.json:sessions"
+      ]
+    },
+    {
+      "case": "working-only-copy",
+      "synthetic_important": true,
+      "truth": "equal selected app; no .git or important unselected files",
+      "outcome": "verified_content_match; project recovery unknown; optional staging confirms risk",
+      "classification": "narrow_match_with_incomplete_recovery",
+      "evidence": [
+        "oracle.json:recovery",
+        "04-both.json:working-copy"
+      ]
+    },
+    {
+      "case": "stale-notes",
+      "synthetic_important": true,
+      "truth": "restored notes have old bytes",
+      "outcome": "explicit mismatch after added selection and renewed file authorization",
+      "classification": "selected_mismatch_detection",
+      "evidence": [
+        "05-revised-selections.json:working-copy"
+      ]
+    },
+    {
+      "case": "missing-idea",
+      "synthetic_important": true,
+      "truth": "restored selected idea absent",
+      "outcome": "selected_file_missing and unknown after selection approval",
+      "classification": "explicit_missing_selection_gap",
+      "evidence": [
+        "05-revised-selections.json:working-copy"
+      ]
+    },
+    {
+      "case": "timestamp-noise",
+      "synthetic_important": false,
+      "truth": "touched timestamp; bytes identical to HEAD",
+      "outcome": "inferred working metadata warning",
+      "classification": "noise_prompt_no_byte_loss",
+      "evidence": [
+        "oracle.json:recovery.noise_working_bytes_equal_head",
+        "01-default.json:noise"
+      ]
+    },
+    {
+      "case": "ancestor-noise",
+      "synthetic_important": false,
+      "truth": "older branch already ancestor of cached remote",
+      "outcome": "inferred exact-tip difference",
+      "classification": "noise_prompt_no_unpublished_work_evidence",
+      "evidence": [
+        "oracle.json:recovery.noise_older_is_remote_ancestor",
+        "01-default.json:noise"
+      ]
+    },
+    {
+      "case": "cache-noise",
+      "synthetic_important": false,
+      "truth": "disposable ignored build cache",
+      "outcome": "included alongside important files in one aggregate prompt",
+      "classification": "noise_within_mixed_prompt",
+      "evidence": [
+        "04-both.json:loose"
+      ]
+    }
+  ]
+}

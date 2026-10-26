@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "projects": [
+    {"id": "my-project", "path": "/replace/with/explicit/project"}
+  ],
+  "sessions": [
+    {"id": "my-sessions", "path": "/replace/with/explicit/session-directory", "tool": "codex"}
+  ],
+  "recoveries": [
+    {
+      "id": "selected-code",
+      "source": "/replace/with/explicit/project",
+      "restored": "/replace/with/separately/restored/project",
+      "files": ["src/non_sensitive_example.py"]
+    }
+  ]
+}

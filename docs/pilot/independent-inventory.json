@@ -1,0 +1,26 @@
+[
+  {
+    "git_arguments": [
+      "ls-files",
+      "--others",
+      "--exclude-standard"
+    ],
+    "synthetic_paths": [
+      "idea.md",
+      "shortcut"
+    ]
+  },
+  {
+    "git_arguments": [
+      "ls-files",
+      "--others",
+      "--ignored",
+      "--exclude-standard"
+    ],
+    "synthetic_paths": [
+      ".env",
+      "build/cache.txt",
+      "scratch.md"
+    ]
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "projects": {
+    "loose": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 1,
+      "count_objects": "count: 11\nsize: 44\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "gc": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": false,
+      "tree_loose": false,
+      "head_links": null,
+      "count_objects": "count: 1\nsize: 4\nin-pack: 6\npacks: 1\nsize-pack: 1\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "mixed": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": false,
+      "head_links": 1,
+      "count_objects": "count: 2\nsize: 8\nin-pack: 6\npacks: 1\nsize-pack: 1\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "index-v4": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 1,
+      "count_objects": "count: 7\nsize: 28\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "reflog": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 1,
+      "count_objects": "count: 9\nsize: 36\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "clone-local": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 2,
+      "count_objects": "count: 43\nsize: 172\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "clone-copy": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 1,
+      "count_objects": "count: 43\nsize: 172\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "clone-transport": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": false,
+      "tree_loose": false,
+      "head_links": null,
+      "count_objects": "count: 1\nsize: 4\nin-pack: 42\npacks: 1\nsize-pack: 5\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "noise": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 1,
+      "count_objects": "count: 9\nsize: 36\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    },
+    "forgotten": {
+      "staged_changes": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "working_matches_head": true,
+      "head_loose": true,
+      "tree_loose": true,
+      "head_links": 1,
+      "count_objects": "count: 6\nsize: 24\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n"
+    }
+  },
+  "recovery": {
+    "restored_staged_program_output": "important version ONLY in index",
+    "working_bytes_equal": true,
+    "staged_bytes_equal_to_working_copy": false,
+    "working_copy_git_present": false,
+    "working_copy_idea_present": false,
+    "full_copy_staged_bytes_equal": true,
+    "full_copy_refs_equal": true,
+    "full_copy_index_equal": true,
+    "full_copy_fsck_exit": 0,
+    "full_copy_stash_equal": true,
+    "session_copy_missing_files": [
+      "day2.jsonl"
+    ],
+    "reflog_only_commit_exists": true,
+    "reflog_only_commit_referenced": false,
+    "reflog_mentions_commit": true,
+    "noise_working_bytes_equal_head": true,
+    "noise_older_is_remote_ancestor": true
+  }
+}
